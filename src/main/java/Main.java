@@ -1,10 +1,7 @@
 
 public class Main {
     public static void main (String[] args){
-       /* Average rand ;
-        rand.getAverage();*/
-
-       /*Home task 1 - need to print the text "Hello World"----------------------------------------*/
+        /*Home task 1 - need to print the text "Hello World"----------------------------------------*/
         //PrintHelloWorld.printHW();
         /*Home task 2.1 - need to find the average an array----------------------------------------*/
         //Average.getAverage();
@@ -19,5 +16,6 @@ public class Main {
         /*Home task 2.6 - need to add a word Hello to the end of array element------------------------*/
         //AddHello.addWord();
         /*Home task 2.7 - need to convert array into boolean------------------------------------------*/
+        ConvertArrayToBoolean.convertArrayToBool();
     }
 }
