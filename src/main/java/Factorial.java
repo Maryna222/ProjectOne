@@ -3,9 +3,16 @@ import java.util.Scanner;
 public class Factorial {
     public static void printFactorial(){
         Scanner in = new Scanner(System.in);
-        System.out.print("Введите целое натуральное число до 63: ");
+        System.out.print("Введите целое натуральное число : ");
         int num = in.nextInt();
-        System.out.printf("Факториал числа: %d! равен %d ", num, Factorial.getFactorial(num));
+        if (num > 63){
+            System.out.print("Введите, пожалуйста число в диапазоне до 63: ");
+            int num2 = in.nextInt();
+            System.out.printf("Факториал числа: %d! равен %d ", num2, Factorial.getFactorial(num2));
+        } else {
+            System.out.printf("Факториал числа: %d! равен %d ", num, Factorial.getFactorial(num));
+        }
+
         in.close();
     }
 
