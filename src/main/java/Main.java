@@ -13,6 +13,9 @@ public class Main {
         /*Home task 2.3 - need to print the price--------------------------------------------------*/
         //CodePrice.printPrice();
         /*Home task 2.4 - need to determine integer--------------------------------------------------*/
-        DetermineInteger.printNumber();
+        //DetermineInteger.printNumber();
+        /*Home task 2.5 - need to convert array into string------------------------------------------*/
+        Convert.getConvert();
+
     }
 }
