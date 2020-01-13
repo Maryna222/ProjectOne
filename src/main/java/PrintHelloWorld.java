@@ -1,7 +1,6 @@
 public class PrintHelloWorld {
-    public static void printToConsole() {
+    public static void printHW() {
         System.out.println("Hello World!");
-        System.out.println("Some new text!!!");
     }
 
 }
