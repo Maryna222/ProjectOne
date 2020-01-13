@@ -11,6 +11,8 @@ public class Main {
         /*Home task 2.2 - need to find Factorial of a number---------------------------------------*/
         //Factorial.printFactorial();
         /*Home task 2.3 - need to print the price--------------------------------------------------*/
-        CodePrice.printPrice();
+        //CodePrice.printPrice();
+        /*Home task 2.4 - need to determine integer--------------------------------------------------*/
+        DetermineInteger.printNumber();
     }
 }
