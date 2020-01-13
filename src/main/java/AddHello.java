@@ -3,7 +3,7 @@ public class AddHello {
         /*range [0;40) - (int)(Math.random()*40)*/
 
         int [] mas2 = new int[15];
-        
+
         System.out.println("К массиву: ");
         for(int i=0; i < mas2.length; i++ ){
             mas2[i] = (int)(Math.random()*40);

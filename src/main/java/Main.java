@@ -16,8 +16,8 @@ public class Main {
         //DetermineInteger.printNumber();
         /*Home task 2.5 - need to convert array into string------------------------------------------*/
         //Convert.getConvert();
-        /*Home task 2.5 - need to add a word Hello to the end of array element------------------------*/
-        AddHello.addWord();
-
+        /*Home task 2.6 - need to add a word Hello to the end of array element------------------------*/
+        //AddHello.addWord();
+        /*Home task 2.7 - need to convert array into boolean------------------------------------------*/
     }
 }
