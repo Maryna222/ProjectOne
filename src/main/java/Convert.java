@@ -12,10 +12,21 @@ public class Convert {
             mas2[i] = (int)(Math.random()*40);
             System.out.print(mas2[i]+" ");
         }
-        System.out.println("\n Преобразуем данный массив в строку: ");
-        myArray = Arrays.toString(mas2);
-        System.out.print(myArray+" - это строка");
+        System.out.println("\n\nПреобразуем данный массив в строку: ");
 
+        myArray = Arrays.toString(mas2);
+        System.out.print(myArray+" <-- это строка\n");
+
+        String strInt = myArray.replaceAll("\\[|\\]|\\,", "");
+        //System.out.print(strInt+" <-- это измененная строка \n");
+
+        System.out.println("\nИ снова в массив:");
+        String strArr[] = strInt.split(" ");
+        int numArr[] = new int[strArr.length];
+        for (int j = 0; j < strArr.length; j++) {
+            numArr[j] = Integer.parseInt(strArr[j]);
+            System.out.print(numArr[j]+" ");
+        }
 
 
     }
