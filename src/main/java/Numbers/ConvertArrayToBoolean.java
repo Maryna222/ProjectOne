@@ -1,3 +1,5 @@
+package Numbers;
+
 public class ConvertArrayToBoolean {
     public static void convertArrayToBool(){
         /*range [0;40) - (int)(Math.random()*40)*/

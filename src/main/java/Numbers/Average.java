@@ -1,3 +1,5 @@
+package Numbers;
+
 import static java.lang.Math.random;
 import java.util.Arrays;
 
