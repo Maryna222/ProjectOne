@@ -1,3 +1,4 @@
+import Operators.GoToShop;
 
 public class Main {
     public static void main (String[] args){
@@ -14,8 +15,13 @@ public class Main {
         /*Home task 2.5 - need to convert array into string------------------------------------------*/
         //Symbols.Convert.getConvert();
         /*Home task 2.6 - need to add a word Hello to the end of array element------------------------*/
-        Symbols.AddHello.addWord();
+        //Symbols.AddHello.addWord();
         /*Home task 2.7 - need to convert array into boolean------------------------------------------*/
-        //ConvertArrayToBoolean.convertArrayToBool();
+        //Numbers.ConvertArrayToBoolean.convertArrayToBool();
+        /*Home task - Operators --------------------------------------------------------------------------------------------*/
+        //GoToShop.printResulOfChoice();
+        /*Home task - Cycles --------------------------------------------------------------------------------------------*/
+        //Cycle.ReturnA.printA();
+        Cycle.ReturnA.printFive();
     }
 }
