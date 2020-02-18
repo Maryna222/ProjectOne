@@ -22,6 +22,15 @@ public class Main {
         //GoToShop.printResulOfChoice();
         /*Home task - Cycles --------------------------------------------------------------------------------------------*/
         //Cycle.ReturnA.printA();
-        Cycle.ReturnA.printFive();
+        //Cycle.ReturnA.printFive();
+        /*Home task 3.0 create class Test--------------------------------------------------------------------------*/
+        ClassLesson.Test.getClassname(" test");
+        /*second task 3.1*/
+        ClassLesson.Test new1 = new ClassLesson.Test();
+        ClassLesson.Test new2 = new ClassLesson.Test();
+
+        new1.getClassname(" param1");
+        new2.getClassname(" param2");
+
     }
 }
