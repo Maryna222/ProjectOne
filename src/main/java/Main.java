@@ -1,5 +1,7 @@
 import Interf.Dog;
 import Interf.DogDog;
+import Modifikators.SecondClass;
+import Modifikators.ThirdClass;
 import Operators.GoToShop;
 
 public class Main {
@@ -25,6 +27,7 @@ public class Main {
         /*Home task - Cycles --------------------------------------------------------------------------------------------*/
         //Cycle.ReturnA.printA();
         //Cycle.ReturnA.printFive();
+
         /*Home task 3.0 create class Test--------------------------------------------------------------------------*/
         //ClassLesson.Test.getClassname(" test");
         /*second task 3.1
@@ -33,6 +36,7 @@ public class Main {
 
         new1.getClassname(" param1");
         new2.getClassname(" param2");*/
+
         /*Task about OOP------------------------------------------------------------------*/
         //Interf.Dog dog = new Dog();
         /*//1+2 points
@@ -52,6 +56,27 @@ public class Main {
         System.out.println("Рост собаки - " + dogDog.Height(50) + " сантиметров");
         System.out.println("Вес собаки - " + dogDog.Weight(5) + " кг");
         System.out.println("Собака бежит - " + dogDog.traffic(5) + " км/час");*/
+
+
+        /*Modifikators home work-----------------------------------------------*/
+        /*//1+2 points
+        SecondClass newValue = new SecondClass();
+        newValue.printMeAll();
+        //System.out.println("Вызван protected метод первого класса - " + newValue.returnNumber()); - ошибка, почему?*/
+          // ------------------------------------------
+        /*//3 point
+        ThirdClass newTmp = new ThirdClass();
+        //newTmp.printMeAll(); - ошибка, так как нет наследования
+        //newTmp.printMePrivate(); - ошибка, так как нет наследования*/
+         // ------------------------------------------
+        /*//4 point*/
+        SecondClass secondValue = new SecondClass();
+        System.out.println("Вызван static метод первого класса:");
+        secondValue.testStatic();
+
+
+
+
 
 
     }
