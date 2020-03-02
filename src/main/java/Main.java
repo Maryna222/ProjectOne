@@ -70,9 +70,12 @@ public class Main {
         //newTmp.printMePrivate(); - ошибка, так как нет наследования*/
          // ------------------------------------------
         /*//4 point*/
-        SecondClass secondValue = new SecondClass();
+        //SecondClass secondValue = new SecondClass();
+        //System.out.println("Вызван static метод первого класса:");
+        //secondValue.testStatic();
+        ///вариант2:
         System.out.println("Вызван static метод первого класса:");
-        secondValue.testStatic();
+        SecondClass.testStatic();
 
 
 
