@@ -1,8 +1,8 @@
 package Interf;
 
 public interface Animals {
-    int Height(int x);
-    int Weight(int x);
+    int height(int x);
+    int weight(int x);
     int traffic(int x);
     void eat();
 }

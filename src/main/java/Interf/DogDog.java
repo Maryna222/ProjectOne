@@ -1,14 +1,14 @@
 package Interf;
 
-public class DogDog implements Animals {
+public class DogDog extends Dog {
 
     @Override
-    public int Height(int x) {
+    public int height(int x) {
         return x + x + x;
     }
 
     @Override
-    public int Weight(int x) {
+    public int weight(int x) {
         return x * x + 25;
     }
 
@@ -17,8 +17,5 @@ public class DogDog implements Animals {
         return x % 2 + 30;
     }
 
-    public void eat (){
-        System.out.println("Собака ест");
-    }
 
 }

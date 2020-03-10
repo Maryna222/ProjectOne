@@ -2,21 +2,21 @@ package Interf;
 
 public class Dog implements Animals {
 
-   // @Override
-   public int Height(int x) {
+
+   public int height(int x) {
         return x + x;
    }
-   public double Height(double x) {
+   public double height(double x) {
         return x / 3.2808;
    }
-   public char Height(char x) {
+   public char height(char x) {
         return x;
    }
 
-   public int Weight(int x) {
+   public int weight(int x) {
        return x * x;
    }
-   public double Weight(double x) {
+   public double weight(double x) {
        return x / 1000;
    }
 

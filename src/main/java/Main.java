@@ -1,10 +1,12 @@
+import ClassLesson.Test;
 import Interf.Dog;
 import Interf.DogDog;
+import Modifikators.FirstClass;
 import Modifikators.SecondClass;
 import Modifikators.ThirdClass;
 import Operators.GoToShop;
 
-public class Main {
+public class Main  {
     public static void main (String[] args){
         /*Home task 1 - need to print the text "Hello World"----------------------------------------*/
         //Numbers.PrintHelloWorld.printHW();
@@ -29,18 +31,20 @@ public class Main {
         //Cycle.ReturnA.printFive();
 
         /*Home task 3.0 create class Test--------------------------------------------------------------------------*/
-        //ClassLesson.Test.getClassname(" test");
-        /*second task 3.1
-        ClassLesson.Test new1 = new ClassLesson.Test();
-        ClassLesson.Test new2 = new ClassLesson.Test();
+
+        Test tmp = new Test();
+        tmp.getClassname(" test");
+        //second task 3.1
+        Test new1 = new Test();
+        Test new2 = new Test();
 
         new1.getClassname(" param1");
-        new2.getClassname(" param2");*/
+        new2.getClassname(" param2");
 
         /*Task about OOP------------------------------------------------------------------*/
-        //Interf.Dog dog = new Dog();
-        /*//1+2 points
-        System.out.println("Рост собаки - " + dog.Height(50) + " сантиметров");
+       // Interf.Dog dog = new Dog();
+        //1+2 points
+        /*System.out.println("Рост собаки - " + dog.Height(50) + " сантиметров");
         System.out.println("Вес собаки в кг - " + dog.Weight(5));
         System.out.println("Собака бежит - " + dog.traffic(5) + " км/час");
         dog.eat();*/
@@ -62,20 +66,26 @@ public class Main {
         /*//1+2 points
         SecondClass newValue = new SecondClass();
         newValue.printMeAll();
-        //System.out.println("Вызван protected метод первого класса - " + newValue.returnNumber()); - ошибка, почему?*/
+
+        //newValue.printSecond();
+        //System.out.println("Вызван protected метод первого класса - " + newValue.returnNumber()); //- ошибка, почему?*/
           // ------------------------------------------
         /*//3 point
         ThirdClass newTmp = new ThirdClass();
-        //newTmp.printMeAll(); - ошибка, так как нет наследования
-        //newTmp.printMePrivate(); - ошибка, так как нет наследования*/
+        newTmp.printMeAll(); - ошибка, так как нет наследования
+        newTmp.printMePrivate(); - ошибка, так как нет наследования*/
          // ------------------------------------------
         /*//4 point*/
-        //SecondClass secondValue = new SecondClass();
-        //System.out.println("Вызван static метод первого класса:");
-        //secondValue.testStatic();
-        ///вариант2:
-        System.out.println("Вызван static метод первого класса:");
-        SecondClass.testStatic();
+//        SecondClass secondValue = new SecondClass();
+//        System.out.println("Вызван static метод первого класса:");
+//        secondValue.testStatic();
+//        //вариант2:
+//        System.out.println("Вызван static метод первого класса:");
+//        SecondClass.testStatic();
+
+        /*Main tmp = new Main();
+        tmp.newTest();*/
+
 
 
 
@@ -83,4 +93,8 @@ public class Main {
 
 
     }
+/*
+    public void newTest (){
+
+    }*/
 }
