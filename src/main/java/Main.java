@@ -1,4 +1,5 @@
 import ClassLesson.Test;
+import Constructor.ClassWithConstructors;
 import Interf.Dog;
 import Interf.DogDog;
 import Modifikators.FirstClass;
@@ -32,14 +33,14 @@ public class Main  {
 
         /*Home task 3.0 create class Test--------------------------------------------------------------------------*/
 
-        Test tmp = new Test();
-        tmp.getClassname(" test");
-        //second task 3.1
-        Test new1 = new Test();
-        Test new2 = new Test();
-
-        new1.getClassname(" param1");
-        new2.getClassname(" param2");
+//        Test tmp = new Test();
+//        tmp.getClassname(" test");
+//        //second task 3.1
+//        Test new1 = new Test();
+//        Test new2 = new Test();
+//
+//        new1.getClassname(" param1");
+//        new2.getClassname(" param2");
 
         /*Task about OOP------------------------------------------------------------------*/
        // Interf.Dog dog = new Dog();
@@ -82,6 +83,22 @@ public class Main  {
 //        //вариант2:
 //        System.out.println("Вызван static метод первого класса:");
 //        SecondClass.testStatic();
+        //------------------------------------------------------------------------------------------------------------
+        /*The home task for Constructors
+        * №1 */
+//        String paramName = ClassWithConstructors.class.getSimpleName();
+//        ClassWithConstructors tmp = new ClassWithConstructors(paramName);
+//        tmp.getClassName();
+        /* №2 */
+//        String paramName2 = ClassWithConstructors.class.getSimpleName();
+//        ClassWithConstructors tmp = new ClassWithConstructors(paramName2, "Maryna");
+//        tmp.getClassNameConcat();
+        //-------------------------------------------------------------------------------------------------------------
+
+
+
+
+
 
         /*Main tmp = new Main();
         tmp.newTest();*/
