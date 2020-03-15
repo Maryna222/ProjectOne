@@ -1,5 +1,6 @@
 import ClassLesson.Test;
 import Constructor.ClassWithConstructors;
+import Generics.ClassGenerics;
 import Interf.Dog;
 import Interf.DogDog;
 import Modifikators.FirstClass;
@@ -8,7 +9,7 @@ import Modifikators.ThirdClass;
 import Operators.GoToShop;
 
 public class Main  {
-    public static void main (String[] args){
+    public static void main (String[] args) {
         /*Home task 1 - need to print the text "Hello World"----------------------------------------*/
         //Numbers.PrintHelloWorld.printHW();
         /*Home task 2.1 - need to find the average an array----------------------------------------*/
@@ -43,7 +44,7 @@ public class Main  {
 //        new2.getClassname(" param2");
 
         /*Task about OOP------------------------------------------------------------------*/
-       // Interf.Dog dog = new Dog();
+        // Interf.Dog dog = new Dog();
         //1+2 points
         /*System.out.println("Рост собаки - " + dog.Height(50) + " сантиметров");
         System.out.println("Вес собаки в кг - " + dog.Weight(5));
@@ -70,12 +71,12 @@ public class Main  {
 
         //newValue.printSecond();
         //System.out.println("Вызван protected метод первого класса - " + newValue.returnNumber()); //- ошибка, почему?*/
-          // ------------------------------------------
+        // ------------------------------------------
         /*//3 point
         ThirdClass newTmp = new ThirdClass();
         newTmp.printMeAll(); - ошибка, так как нет наследования
         newTmp.printMePrivate(); - ошибка, так как нет наследования*/
-         // ------------------------------------------
+        // ------------------------------------------
         /*//4 point*/
 //        SecondClass secondValue = new SecondClass();
 //        System.out.println("Вызван static метод первого класса:");
@@ -83,9 +84,12 @@ public class Main  {
 //        //вариант2:
 //        System.out.println("Вызван static метод первого класса:");
 //        SecondClass.testStatic();
+
+
         //------------------------------------------------------------------------------------------------------------
         /*The home task for Constructors
-        * №1 */
+        //------------------------------------------------------------------------------------------------------------
+         * №1 */
 //        String paramName = ClassWithConstructors.class.getSimpleName();
 //        ClassWithConstructors tmp = new ClassWithConstructors(paramName);
 //        tmp.getClassName();
@@ -93,25 +97,33 @@ public class Main  {
 //        String paramName2 = ClassWithConstructors.class.getSimpleName();
 //        ClassWithConstructors tmp = new ClassWithConstructors(paramName2, "Maryna");
 //        tmp.getClassNameConcat();
+
         //-------------------------------------------------------------------------------------------------------------
+        /*The home task for Generic
+        //-------------------------------------------------------------------------------------------------------------
+         * №1,2 */
+        /*Simple variant----------------------
+        ClassGenerics<String> tmp = new ClassGenerics<String>();
+        String[] mas1 = {"Tom", "Jerry", "Kymmi", "Haba", "Lakka", "Lunt"};
+        tmp.printRandom(mas1);
 
+        ClassGenerics<Integer> tmp2 = new ClassGenerics<Integer>();
+        Integer[] mas2  = {1, 2, 3, 4, 5, 2, 13, 456, 4};
+        tmp2.printRandom(mas2);
+        ----------------------------------------*/
+        /*№1,2 more specific - with constructors */
+//        ClassGenerics<String> tmp3 = new ClassGenerics<String>("Tom", "Jerry", "Kymmi", "Haba", "Lakka", "Lunt");
+//        tmp3.printRandom();
+//
+//        ClassGenerics<Integer> tmp4 = new ClassGenerics<Integer>(1, 2, 3, 4, 5, 2, 13, 456, 4);
+//        tmp4.printRandom();
 
-
-
-
-
-        /*Main tmp = new Main();
-        tmp.newTest();*/
-
-
-
-
-
-
+        //------------------------------------------------------------------------------------------------------------
+        /*The home task for Exception 
+        //------------------------------------------------------------------------------------------------------------
 
     }
-/*
-    public void newTest (){
-
-    }*/
+       /*Main tmp = new Main();
+        tmp.newTest();
+        public void newTest (){}*/
 }
