@@ -1,5 +1,6 @@
 import ClassLesson.Test;
 import Constructor.ClassWithConstructors;
+import Exceptions.DivideByZero;
 import Generics.ClassGenerics;
 import Interf.Dog;
 import Interf.DogDog;
@@ -8,8 +9,13 @@ import Modifikators.SecondClass;
 import Modifikators.ThirdClass;
 import Operators.GoToShop;
 
+import java.io.FileNotFoundException;
+
+import static Exceptions.DivideByZero.*;
+
+
 public class Main  {
-    public static void main (String[] args) {
+    public static void main (String[] args) throws FileNotFoundException {
         /*Home task 1 - need to print the text "Hello World"----------------------------------------*/
         //Numbers.PrintHelloWorld.printHW();
         /*Home task 2.1 - need to find the average an array----------------------------------------*/
@@ -99,18 +105,17 @@ public class Main  {
 //        tmp.getClassNameConcat();
 
         //-------------------------------------------------------------------------------------------------------------
-        /*The home task for Generic
+        /*The home task for Generic*/
         //-------------------------------------------------------------------------------------------------------------
-         * №1,2 */
-        /*Simple variant----------------------
-        ClassGenerics<String> tmp = new ClassGenerics<String>();
-        String[] mas1 = {"Tom", "Jerry", "Kymmi", "Haba", "Lakka", "Lunt"};
-        tmp.printRandom(mas1);
+        //№1,2 Simple variant----------------------
+//       ClassGenerics<String> tmp = new ClassGenerics<String>();
+//        String[] mas1 = {"Tom", "Jerry", "Kymmi", "Haba", "Lakka", "Lunt"};
+//        tmp.printRandom(mas1);
+//
+//        ClassGenerics<Integer> tmp2 = new ClassGenerics<Integer>();
+//        Integer[] mas2  = {1, 2, 3, 4, 5, 2, 13, 456, 4};
+//        tmp2.printRandom(mas2);
 
-        ClassGenerics<Integer> tmp2 = new ClassGenerics<Integer>();
-        Integer[] mas2  = {1, 2, 3, 4, 5, 2, 13, 456, 4};
-        tmp2.printRandom(mas2);
-        ----------------------------------------*/
         /*№1,2 more specific - with constructors */
 //        ClassGenerics<String> tmp3 = new ClassGenerics<String>("Tom", "Jerry", "Kymmi", "Haba", "Lakka", "Lunt");
 //        tmp3.printRandom();
@@ -119,11 +124,24 @@ public class Main  {
 //        tmp4.printRandom();
 
         //------------------------------------------------------------------------------------------------------------
-        /*The home task for Exception 
+        /*The home task for Exception */
         //------------------------------------------------------------------------------------------------------------
+        //№1----------------------
+//        DivideByZero exept = new DivideByZero();
+//        exept.divideMethod(1,0);
+//        exept.divideMethod(15,3);
+        //№2----------------------
+//        DivideByZero exept = new DivideByZero();
+//        exept.divideFin(1,1);
+//        exept.divideFin(1,0);
+        //№3.1 - nullpointer----------------------
+//        exeptNull(5);
+//        Integer test = null;
+//        exeptNull(test);
+        //№3.2 - fileIO----------------------
+//        exeptFile("tmp");
+
 
     }
-       /*Main tmp = new Main();
-        tmp.newTest();
-        public void newTest (){}*/
+
 }
