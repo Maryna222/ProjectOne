@@ -10,6 +10,10 @@ import Modifikators.ThirdClass;
 import Operators.GoToShop;
 
 import java.io.FileNotFoundException;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 import static Exceptions.DivideByZero.*;
 
@@ -140,6 +144,28 @@ public class Main  {
 //        exeptNull(test);
         //№3.2 - fileIO----------------------
 //        exeptFile("tmp");
+
+        //------------------------------------------------------------------------------------------------------------
+        /*The home task for HashMap  */
+        //------------------------------------------------------------------------------------------------------------
+        //№1----------------------
+//        HashMap<Integer, String> coronaCountry = new HashMap<Integer, String>();
+//        coronaCountry.put(1, "China");
+//        coronaCountry.put(2, "Italy");
+//        coronaCountry.put(4, "Iran");
+//        coronaCountry.put(3, "South Korea");
+//        //№2----------------------
+//        System.out.println("Согласно https://www.coronatracker.com/ статистика по COVID-19:");
+//        for(HashMap.Entry<Integer, String> i : coronaCountry.entrySet()){
+//            System.out.printf("Место: %d  Страна: %s \n", i.getKey(), i.getValue());
+//        }
+        //№3----------------------
+//        HashSet<Integer> myHashSet = new HashSet<Integer>();
+//        myHashSet.add(1);
+//        myHashSet.add(1);
+//        for (int i : myHashSet) {
+//            System.out.println(i);
+//        }
 
 
     }
