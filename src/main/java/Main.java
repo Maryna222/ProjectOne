@@ -8,6 +8,7 @@ import Modifikators.FirstClass;
 import Modifikators.SecondClass;
 import Modifikators.ThirdClass;
 import Operators.GoToShop;
+import Threads.RunThreads;
 
 import java.io.FileNotFoundException;
 import java.util.HashMap;
@@ -166,6 +167,46 @@ public class Main  {
 //        for (int i : myHashSet) {
 //            System.out.println(i);
 //        }
+        //------------------------------------------------------------------------------------------------------------
+        /*The home task for Thread  */
+        //------------------------------------------------------------------------------------------------------------
+        //№2----------------------
+//        RunThreads tmp = new RunThreads();
+//        tmp.start();
+//
+//        RunThreads tmp1 = new RunThreads();
+//        tmp1.start();
+//
+//        RunThreads tmp2 = new RunThreads();
+//        tmp2.start();
+//
+//        RunThreads tmp3 = new RunThreads();
+//        tmp3.start();
+//
+//        RunThreads tmp4 = new RunThreads();
+//        tmp4.start();
+//
+//        RunThreads tmp5 = new RunThreads();
+//        tmp5.start();
+//
+//        RunThreads tmp6 = new RunThreads();
+//        tmp6.start();
+//
+//        RunThreads tmp7 = new RunThreads();
+//        tmp7.start();
+//
+//        RunThreads tmp8 = new RunThreads();
+//        tmp8.start();
+//
+//        RunThreads tmp9 = new RunThreads();
+//        tmp9.start();
+
+        //№1----------------------
+        RunThreads tmp10 = new RunThreads();
+        tmp10.run2();
+        RunThreads tmp11 = new RunThreads();
+        tmp11.run2();
+
 
 
     }
