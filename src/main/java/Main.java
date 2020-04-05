@@ -8,6 +8,7 @@ import Modifikators.FirstClass;
 import Modifikators.SecondClass;
 import Modifikators.ThirdClass;
 import Operators.GoToShop;
+import Threads.RunSynchronizedThreads;
 import Threads.RunThreads;
 
 import java.io.FileNotFoundException;
@@ -15,12 +16,15 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import static Exceptions.DivideByZero.*;
 
 
-public class Main  {
-    public static void main (String[] args) throws FileNotFoundException {
+
+public class Main {
+    public static void main(String[] args) throws FileNotFoundException {
+
         /*Home task 1 - need to print the text "Hello World"----------------------------------------*/
         //Numbers.PrintHelloWorld.printHW();
         /*Home task 2.1 - need to find the average an array----------------------------------------*/
@@ -153,8 +157,8 @@ public class Main  {
 //        HashMap<Integer, String> coronaCountry = new HashMap<Integer, String>();
 //        coronaCountry.put(1, "China");
 //        coronaCountry.put(2, "Italy");
-//        coronaCountry.put(4, "Iran");
-//        coronaCountry.put(3, "South Korea");
+//        coronaCountry.put(3, "Iran");
+//        coronaCountry.put(4, "South Korea");
 //        //№2----------------------
 //        System.out.println("Согласно https://www.coronatracker.com/ статистика по COVID-19:");
 //        for(HashMap.Entry<Integer, String> i : coronaCountry.entrySet()){
@@ -171,44 +175,25 @@ public class Main  {
         /*The home task for Thread  */
         //------------------------------------------------------------------------------------------------------------
         //№2----------------------
-//        RunThreads tmp = new RunThreads();
-//        tmp.start();
-//
-//        RunThreads tmp1 = new RunThreads();
-//        tmp1.start();
-//
-//        RunThreads tmp2 = new RunThreads();
-//        tmp2.start();
-//
-//        RunThreads tmp3 = new RunThreads();
-//        tmp3.start();
-//
-//        RunThreads tmp4 = new RunThreads();
-//        tmp4.start();
-//
-//        RunThreads tmp5 = new RunThreads();
-//        tmp5.start();
-//
-//        RunThreads tmp6 = new RunThreads();
-//        tmp6.start();
-//
-//        RunThreads tmp7 = new RunThreads();
-//        tmp7.start();
-//
-//        RunThreads tmp8 = new RunThreads();
-//        tmp8.start();
-//
-//        RunThreads tmp9 = new RunThreads();
-//        tmp9.start();
-
+//        for(int i=0; i<10; i++){
+//            RunThreads tmp = new RunThreads();
+//            tmp.start();
+//        }
         //№1----------------------
-        RunThreads tmp10 = new RunThreads();
-        tmp10.run2();
-        RunThreads tmp11 = new RunThreads();
-        tmp11.run2();
+//        for(int j=0; j<2; j++){
+//            RunSynchronizedThreads tmp = new RunSynchronizedThreads();
+//            tmp.start();
+//        }
+        //------------------------------------------------------------------------------------------------------------
+        /*The home task for Serialization/Deserialization  */
+        //------------------------------------------------------------------------------------------------------------
+        //№1 Преобразовать в массив'["Коля", "Вася", "Петя"]'
+
+
+        // №2 Преобразовать в JSON {a: 'aaa', b: 'bbb'}
+        // №3 Получить массив name из Json
 
 
 
     }
-
 }

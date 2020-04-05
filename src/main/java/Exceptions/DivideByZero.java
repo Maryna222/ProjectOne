@@ -22,16 +22,17 @@ public class DivideByZero {
             result2 = x/y;
             System.out.println("Результат деления : " + result2);
         }finally {
-            if(y==0){
-                System.out.println("На ноль делить нельзя!!!");
-            }
+            throw new ArithmeticException("На ноль делить нельзя!!!");
+//            if(y==0){
+//                System.out.println("На ноль делить нельзя!!!");
+//            }
         }
     }
 
     public static void exeptFile(String way) throws FileNotFoundException {
         File file = new File("way");
         Scanner find = new Scanner(file);
-        if (file == null){
+        if (find == null){
             throw new FileNotFoundException();
         }
     }
