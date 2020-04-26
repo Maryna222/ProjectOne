@@ -1,29 +1,10 @@
-import ClassLesson.Test;
-import Constructor.ClassWithConstructors;
-import Exceptions.DivideByZero;
-import Generics.ClassGenerics;
-import Interf.Dog;
-import Interf.DogDog;
-import Modifikators.FirstClass;
-import Modifikators.SecondClass;
-import Modifikators.ThirdClass;
-import Operators.GoToShop;
-import Threads.RunSynchronizedThreads;
-import Threads.RunThreads;
+import DeserializationRealFile.GetNames;
 
-import java.io.FileNotFoundException;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-import java.util.concurrent.TimeUnit;
-
-import static Exceptions.DivideByZero.*;
-
+import java.io.IOException;
 
 
 public class Main {
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
 
         /*Home task 1 - need to print the text "Hello World"----------------------------------------*/
         //Numbers.PrintHelloWorld.printHW();
@@ -188,10 +169,25 @@ public class Main {
         /*The home task for Serialization/Deserialization  */
         //------------------------------------------------------------------------------------------------------------
         //№1 Преобразовать в массив'["Коля", "Вася", "Петя"]'
-
-
+//        WorkWithJson.someMethod();
         // №2 Преобразовать в JSON {a: 'aaa', b: 'bbb'}
+//        SomeSymbols someSymbols = new SomeSymbols("aaa","bbb");
+//
+//        ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("SomeSymbols.out"));
+//        objectOutputStream.writeObject(someSymbols);
+//        objectOutputStream.close();
+//
+//        ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream("SomeSymbols.out"));
+//        SomeSymbols someSymbolsRestored = (SomeSymbols) objectInputStream.readObject();
+//        objectInputStream.close();
+//
+//        System.out.println("Before Serialize: " + "\n" + someSymbols );
+//        System.out.println("After Restored: " + "\n" + someSymbolsRestored);
+//
+
         // №3 Получить массив name из Json
+        GetNames getNameFromJson = new GetNames();
+        getNameFromJson.getNameMethod();
 
 
 
